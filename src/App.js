@@ -1,7 +1,6 @@
 import './App.css';
 import React, { useEffect, useState } from 'react';
 import { w3cwebsocket as W3CWebSocket } from "websocket";
-import { io } from 'socket.io-client';
 import {
   Paper,
   Table,
