@@ -104,7 +104,6 @@ function App() {
     getData();
   }, [])
 
-  console.log(response)
 
 
 
