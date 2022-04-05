@@ -67,7 +67,7 @@ function App() {
       "channels": [
         {
           name: "v2/ticker",
-          symbols: ["BTCUSD", "BTCUSDT"]
+          symbols: ["BTCUSD"]
         },
       ]
     }
@@ -103,6 +103,8 @@ function App() {
     getData();
   }, [])
 
+  console.log("response", response)
+
 
 
 
@@ -110,7 +112,6 @@ function App() {
   return (
     <div className="App">
       {data.length === 0 ? <Loading /> :
-
         <Paper>
           <TableContainer className={classes.container} component={Paper}>
             <Table sx={{ minWidth: 650, position: 'fixed' }} aria-label="simple table">
